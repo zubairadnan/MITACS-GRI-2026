@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"./.venv/Scripts/python.exe\" -m pip install \"qiskit==2.5.*\" qiskit-ibm-runtime qiskit-aer)",
+      "Bash(\"./.venv/Scripts/python.exe\" -m pip install jupyter ipykernel matplotlib pandas)",
+      "Bash(.venv/Scripts/python.exe -c \"import bv_dd_lib as bv; print\\('OK'\\); print\\([f for f in ['connect_and_pick_backend','build_variant_circuits','add_dynamical_decoupling'] if hasattr\\(bv, f\\)]\\)\")"
+    ]
+  }
+}
